@@ -2,7 +2,7 @@
 # Dockerfile for RAMADDA
 ###
 
-FROM unidata/tomcat-docker:8.5
+FROM unidata/tomcat-docker:8.5-jdk11
 
 ###
 # Usual maintenance
