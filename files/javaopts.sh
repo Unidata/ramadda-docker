@@ -4,7 +4,7 @@
 # Java options
 ###
 
-NORMAL="-server -d64 -Xms512m -Xmx4G"
+NORMAL="-server -Xms512m -Xmx4G"
 
 UMASK="-Dorg.apache.catalina.security.SecurityListener.UMASK=0007"
 
