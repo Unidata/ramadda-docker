@@ -1,6 +1,6 @@
 # RAMADDA Docker
 
-This repository contains files necessary to build and run a Docker container for [RAMADDA](https://sourceforge.net/projects/ramadda/). The RAMADDA Docker images associated with this repository are [available on Docker Hub](https://hub.docker.com/r/unidata/ramadda-docker/).
+This repository contains files necessary to build and run a Docker container for [RAMADDA](https://github.com/geodesystems/ramadda). The RAMADDA Docker images associated with this repository are [available on Docker Hub](https://hub.docker.com/r/unidata/ramadda-docker/).
 
 ## Versions
 
