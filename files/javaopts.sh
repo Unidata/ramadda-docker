@@ -6,7 +6,7 @@
 
 NORMAL="-server -Xms512m -Xmx4G"
 
-UMASK="-Dorg.apache.catalina.security.SecurityListener.UMASK=0007"
+UMASK="0007"
 
 RAMADDA_HOME="-Dramadda_home=$DATA_DIR"
 
