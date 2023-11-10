@@ -47,7 +47,7 @@ This repository contains files necessary to build and run a RAMADDA Docker conta
 ### Quickstart
 
 ```sh
-docker run -d -p 80:8080 unidata/ramadda-docker:<version>
+docker run -d -p 80:8080 unidata/ramadda-docker:latest
 ```
 
 
@@ -55,7 +55,9 @@ docker run -d -p 80:8080 unidata/ramadda-docker:<version>
 
 ## Versions
 
-See tags listed [on dockerhub](https://hub.docker.com/r/unidata/ramadda-docker/tags). Our security protocols have become stricter, and any image linked to a CVE must be taken down immediately from DockerHub. We strive to maintain the security of this project's DockerHub images by updating them with the latest upstream improvements. If you have any concerns in this area, please email us at [security@unidata.ucar.edu](mailto:security@unidata.ucar.edu) to bring them to our attention.
+From now on, only the "latest" version of RAMADDA will be maintained in ramadda-docker, due to its frequent updates, sometimes occurring daily. This "latest" version will be updated in conjunction with any new releases of the upstream Tomcat images.
+
+We strive to maintain the security of this project's DockerHub images by updating them with the latest upstream improvements. If you have any concerns in this area, please email us at [security@unidata.ucar.edu](mailto:security@unidata.ucar.edu) to bring them to our attention.
 
 
 <a id="h-23902167"></a>
@@ -72,14 +74,14 @@ Before you begin using this Docker container project, make sure your system has 
 You can either pull the image from DockerHub with:
 
 ```sh
-docker pull unidata/ramadda-docker:<version>
+docker pull unidata/ramadda-docker:latest
 ```
 
 Or you can build it yourself with:
 
 1.  ****Clone the repository****: `git clone https://github.com/Unidata/ramadda-docker.git`
 2.  ****Navigate to the project directory****: `cd ramadda-docker`
-3.  ****Build the Docker image****: `docker build -t ramadda-docker:<version>` .
+3.  ****Build the Docker image****: `docker build -t ramadda-docker:latest` .
 
 
 <a id="h-232B8397"></a>
@@ -173,15 +175,13 @@ Replace mysecretpassword with the password of your choosing.
 
 ### Upgrading
 
-Upgrading to a newer version of the container is easy. Simply stop the container via `docker` or `docker-compose`, followed by
+Upgrading to the latest version of the image is easy. Simply stop the container via `docker` or `docker-compose`, followed by
 
 ```sh
-docker pull unidata/ramadda-docker:<version>
+docker pull unidata/ramadda-docker:latest
 ```
 
-and restart the container. Refer to the new version from the command line or in the `docker-compose.yml`.
-
-Note that a given version of the RAMADDA image **does not** remain frozen in time. It can get rebuilt time and again as upstream image updates need to be incorporated into this RAMADDA image. It may be confusing for a versioned image to evolve, but it is the convention in Dockerland.
+and restart the container.
 
 
 <a id="h-7A9DACE9"></a>
