@@ -29,7 +29,7 @@ if [ "$1" = 'startram.sh' ]; then
         -type d -exec chmod 755 {} \; -o -type f -exec chmod 400 {} \;
 
     sync
-    exec gosu tomcat "$@"
+    exec gosu $USER_ID "$@"
 fi
 
 exec "$@"
