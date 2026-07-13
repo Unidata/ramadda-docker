@@ -1,3 +1,5 @@
+**As of 7-13-2026 this project has been archived and is no longer maintained.**
+
 - [Unidata RAMADDA Docker](#h-58AAF24A)
   - [Introduction](#h-440D6E11)
     - [Quickstart](#h-2B7ACAE3)
